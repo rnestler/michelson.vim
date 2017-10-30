@@ -107,5 +107,5 @@ highlight default link michelsonTypes Type
 highlight default link michelsonBoolean Boolean
 highlight default link michelsonNumber Number
 highlight default link michelsonString String
-highlight default link michelsonString String
+highlight default link michelsonTodos Todo
 highlight default link michelsonComment Comment
