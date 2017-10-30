@@ -9,6 +9,8 @@ syntax keyword michelsonTypes
     \ set
     \ map
     \ key
+    \ int
+    \ lambda
 
 syntax keyword michelsonBoolean
     \ True
