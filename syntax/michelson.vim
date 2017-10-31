@@ -22,6 +22,19 @@ syntax keyword michelsonBoolean
     \ True
     \ False
 
+syntax keyword michelsonData
+    \ Unit
+    \ True
+    \ False
+    \ Pair
+    \ Left
+    \ Right
+    \ Some
+    \ None
+    \ List
+    \ Set
+    \ Map
+
 syntax match michelsonNumber "\v<\d+>"
 
 syntax region michelsonString start=/"/ end=/"/ oneline
@@ -103,5 +116,6 @@ highlight default link michelsonTypes Type
 highlight default link michelsonBoolean Boolean
 highlight default link michelsonNumber Number
 highlight default link michelsonString String
+highlight default link michelsonData Function
 highlight default link michelsonTodos Todo
 highlight default link michelsonComment Comment
