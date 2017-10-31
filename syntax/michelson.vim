@@ -30,13 +30,14 @@ syntax keyword michelsonTodos contained TODO XXX FIXME NOTE
 
 syntax match michelsonComment "\v#.*$" contains=michelsonTodos,@Spell oneline
 
-syntax keyword michelsonKeywords
+syntax keyword michelsonInstructions
     \ DROP
     \ DUP
     \ SWAP
     \ PUSH
     \ SOME
     \ NONE
+    \ UNIT
     \ IF_NONE
     \ PAIR
     \ CAR
@@ -60,7 +61,6 @@ syntax keyword michelsonKeywords
     \ EXEC
     \ DIP
     \ FAIL
-    \ NOP
     \ CONCAT
     \ ADD
     \ SUB
@@ -82,33 +82,23 @@ syntax keyword michelsonKeywords
     \ GT
     \ LE
     \ GE
-    \ CAST
-    \ CHECKED_ABS
-    \ CHECKED_NEG
-    \ CHECKED_ADD
-    \ CHECKED_SUB
-    \ CHECKED_MUL
-    \ CHECKED_CAST
-    \ FLOOR
-    \ CEIL
-    \ INF
-    \ NAN
-    \ ISNAN
-    \ NANAN
+    \ INT
     \ MANAGER
+    \ SELF
     \ TRANSFER_TOKENS
     \ CREATE_ACCOUNT
     \ CREATE_CONTRACT
+    \ DEFAULT_ACCOUNT
     \ NOW
     \ AMOUNT
     \ BALANCE
     \ CHECK_SIGNATURE
     \ H
+    \ HASH_KEY
     \ STEPS_TO_QUOTA
     \ SOURCE
-    \ UNIT
 
-highlight default link michelsonKeywords Keyword
+highlight default link michelsonInstructions Keyword
 highlight default link michelsonTypes Type
 highlight default link michelsonBoolean Boolean
 highlight default link michelsonNumber Number
