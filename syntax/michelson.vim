@@ -1,16 +1,22 @@
 syntax keyword michelsonTypes
-    \ string
-    \ bool
-    \ unit
-    \ list
-    \ pair
-    \ option
-    \ or
-    \ set
-    \ map
-    \ key
     \ int
+    \ nat
+    \ unit
+    \ string
+    \ tez
+    \ bool
+    \ key
+    \ key_hash
+    \ timestamp
+    \ signature
+    \ option
+    \ list
+    \ set
+    \ contract
+    \ pair
+    \ or
     \ lambda
+    \ map
 
 syntax keyword michelsonBoolean
     \ True
