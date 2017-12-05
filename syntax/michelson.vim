@@ -35,6 +35,12 @@ syntax keyword michelsonData
     \ Set
     \ Map
 
+syntax keyword michelsonKeywords
+            \ parameter
+            \ return
+            \ storage
+            \ code
+
 syntax match michelsonNumber "\v<\d+>"
 
 syntax region michelsonString start=/"/ end=/"/ oneline
@@ -117,5 +123,6 @@ highlight default link michelsonBoolean Boolean
 highlight default link michelsonNumber Number
 highlight default link michelsonString String
 highlight default link michelsonData Function
+highlight default link michelsonKeywords PreCondit
 highlight default link michelsonTodos Todo
 highlight default link michelsonComment Comment
